@@ -3,11 +3,15 @@ import 'package:get/get.dart';
 import 'package:get/state_manager.dart';
 import 'package:quiz_app/models/Questions.dart';
 import 'package:quiz_app/screens/score/score_screen.dart';
+import 'package:audioplayers/audio_cache.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 // We use get package for our state management
 
 
 TextEditingController nameController = new TextEditingController();
+
+AudioCache cache = new AudioCache();
 
 class QuestionController extends GetxController
     with SingleGetTickerProviderMixin {
@@ -82,7 +86,12 @@ class QuestionController extends GetxController
     _correctAns = question.answer;
     _selectedAns = selectedIndex;
 
-    if (_correctAns == _selectedAns) _numOfCorrectAns++;
+    if (_correctAns == _selectedAns){
+      _numOfCorrectAns++;
+       cache.play("mixkit-correct-answer-tone-2870.wav");
+    }else{
+      cache.play("mixkit-negative-answer-lose-2032.wav");
+    }
 
     // It will stop the counter
     _animationController.stop();
