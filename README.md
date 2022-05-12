@@ -1,6 +1,6 @@
 # Quiz App by using flutter
 
-**APK** - build/app/outputs/flutter-apk/app-release.apk
+**APK** - app-release.apk
 
 **Packages we are using:**
 
