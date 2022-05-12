@@ -1,5 +1,7 @@
 # Quiz App by using flutter
 
+**APK** - build/app/outputs/flutter-apk/app-release.apk
+
 **Packages we are using:**
 
 - websafe_svg: [link](https://pub.dev/packages/websafe_svg)
