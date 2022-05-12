@@ -1,6 +1,6 @@
 # Quiz App by using flutter
 
-**APK** - app-release.apk
+**APK** - https://github.com/Arpit-Jha/QuizApp-Flutter-Toycathon/blob/9676bf035c9c61c8575846f5a5ca7acbd2687466/app-release.apk
 
 **Packages we are using:**
 
